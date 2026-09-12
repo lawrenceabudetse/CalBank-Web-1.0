@@ -1,0 +1,80 @@
+/* Main Page & Button Styles */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.message-box {
+    background-color: #eef6ff;
+    border-left: 4px solid #0066cc;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.no-messages {
+    color: #777;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.nav-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: block;
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #004b99;
+}
+
+/* Author Footer Styles */
+.author-card {
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #555;
+    font-family: sans-serif;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.bio-text {
+    font-size: 0.9rem;
+    max-width: 450px;
+    margin: 8px auto;
+    line-height: 1.4;
+    color: #666;
+}
+
+.author-links {
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.author-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.author-links a:hover {
+    text-decoration: underline;
+}
