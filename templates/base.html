@@ -1,0 +1,19 @@
+<html>
+<title>{% block title %}{% endblock %}</title>
+<head></head>
+<body>
+    <nav>
+        <a href="/">HOME</a> | <a href="/deposit">DEPOSIT</a> | <a href="/withdraw">WITHDRAW</a> | <a href='/check_balance'>CHECK BALANCE</a>
+    </nav>
+    <hr>
+
+    <div class="container-fluid">
+    <h1>CAL BANK</h1>
+    <h2>WELCOME TO CAL BANK A PLACE OF FINANCE</h2>
+    <p>MESSAGES</p>
+    <!-- This is where the code from login.html will inject itself -->
+    {% block content %}
+    {% endblock %}
+    </div>
+</body>
+</html>
