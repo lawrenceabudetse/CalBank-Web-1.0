@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}DEPOSIT{% endblock %}
+{% block content%}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class="flashes">
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<form action="/deposit" method="POST">
+  <div class="form-group">
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" placeholder="Enter Amount To Deposit" required autocomplete="on">
+  </div>
+  <button type="submit" class="submit-btn">DEPOSIT</button>
+</form>
+</div>
+{% endblock %}
