@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}HOME{% endblock%}
+{% block content %}
+<div class="container">
+    <h2>Recent Activity & Messages</h2>
+
+    <!-- Flash Messages display directly here if not already in base.html -->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="message-box">
+          {% for message in messages %}
+            <p class="flash-item">{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="no-messages">No new notifications. Perform a transaction up in the nav bar</p>
+      {% endif %}
+    {% endwith %}
+</div>
+{% endblock%}
